@@ -11,8 +11,8 @@ class PresController {
   	getAllPresidentsAsc(req, res) {
   		  var [...asc]= db
   		  asc = asc.sort((a,b)=>{
-        var A = a.President.toUpperCase();
-        var B = b.President.toUpperCase();
+        var A = a.president.toUpperCase();
+        var B = b.president.toUpperCase();
         if (A < B) {
           return -1;
         }
@@ -26,8 +26,8 @@ class PresController {
   getAllPresidentsDesc(req, res) {
   		  var [...desc]= db
   		  desc = desc.sort((a,b)=>{
-  			var A = a.President.toUpperCase();
-  			var B = b.President.toUpperCase();
+  			var A = a.president.toUpperCase();
+  			var B = b.president.toUpperCase();
   			if (A > B) {
     			return -1;
   			}
