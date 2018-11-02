@@ -5,7 +5,7 @@ import db from '../db/db';
 class PresController {
 
 	getAllPresidents(req, res) {
-    	 return res.status(200).send(db);
+    	 return res.status(200).json(db);
   }
 
   	getAllPresidentsAsc(req, res) {
@@ -20,7 +20,7 @@ class PresController {
           return 1;
         }
       });
-   		return res.status(200).send(asc); 
+   		return res.status(200).json(asc); 
   }
 
   getAllPresidentsDesc(req, res) {
@@ -36,7 +36,7 @@ class PresController {
   			}
   		});
   		
-   		return res.status(200).send(desc); 
+   		return res.status(200).json(desc); 
   }
 
 
