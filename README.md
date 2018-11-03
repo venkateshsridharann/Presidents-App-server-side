@@ -12,18 +12,24 @@ then run
 ```
 npm start
 ```
-for chronological order navigate to 
+# API urls
+
+For chronological order navigate to 
 ```
 http://localhost:4000/api/home 
 ```
-for ascending alphabetical order navigate to 
+For ascending alphabetical order navigate to 
 ```
 http://localhost:4000/api/asc 
 ```
-for ascending alphabetical order navigate to 
+For ascending alphabetical order navigate to 
 ```
 http://localhost:4000/api/desc
 ```
-
 The app will automatically reload if you change any of the source files.
 
+## The API is hosted on Heroku as
+
+https://presidents-server-side.herokuapp.com/api/home
+https://presidents-server-side.herokuapp.com/api/asc
+https://presidents-server-side.herokuapp.com/api/desc
